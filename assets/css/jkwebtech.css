@@ -185,8 +185,8 @@ ul {
 p {
   font-size: 15px;
   line-height: 30px;
-  font-weight: 300;
-  color: #afafaf;
+  font-weight: 400;
+  color: #333;
 }
 
 img {
@@ -277,7 +277,7 @@ body {
   display: inline-block !important;
   padding: 10px 20px !important;
   color: #971a2b !important;
-  border: 1px solid #971a2b !important;
+  border: 1.5px solid #971a2b !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -312,20 +312,27 @@ header
 }
 
 @media (max-width: 576px) {
-  .pre-header ul.info{
+  .pre-header ul.info {
     text-align: center !important;
   }
-.pre-header ul.info li {
-  margin-right: 0px !important;
 
-}
-.pre-header {
-  height: 90px !important;
-}
-.pre-header ul.social-media {
-  text-align: center !important;
-  margin-top: 10px !important;
-}
+  .pre-header ul.info li {
+    margin-right: 0px !important;
+
+  }
+
+  .pre-header {
+    height: 90px !important;
+  }
+
+  .pre-header ul.social-media {
+    text-align: center !important;
+    margin-top: 10px !important;
+  }
+  .main-banner .item h2 {
+    font-size: 40px !important;
+    line-height: 60px !important;
+  }
 }
 
 
@@ -444,9 +451,10 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 @media (min-width: 1024px) {
-.header-area .main-nav .logo {
-   width: 280px;
+  .header-area .main-nav .logo {
+    width: 280px;
   }
 }
 
@@ -460,7 +468,7 @@ header
 
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 25px; 
+  margin-top: 25px;
   margin-right: 0px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
@@ -1066,9 +1074,10 @@ Banner Style
 .main-banner .right-image img {
   max-width: 700px;
 }
+
 .main-banner .item h6 {
   text-transform: uppercase;
-  font-size: 18px;  
+  font-size: 18px;
   color: #971a2b;
   margin-bottom: 15px;
 }
@@ -1105,7 +1114,7 @@ Banner Style
   text-align: center;
   line-height: 46px;
   border-radius: 50%;
-  background: rgb(255,104,95);
+  background: rgb(255, 104, 95);
   background: linear-gradient(105deg, #f37025 0%, #f37025 100%);
   color: #fff;
   font-size: 20px;
@@ -1124,26 +1133,28 @@ Banner Style
 }
 
 .main-banner .owl-dot:before {
-  counter-increment:dots;
-  content: counter(dots);
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 10px;
-  color: #2a2a2a;
-  width: 15px;
+  content: "";
   display: inline-block;
-  text-align: center;
-  border-bottom: 3px solid transparent;
-  transition: all .5s;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  border-radius: 50%;          /* makes it a circle */
+  background: #2a2a2a;         /* dot color */
+  transition: all .3s ease;
+}
+.main-banner .owl-dot.active:before {
+  background: #971a2b;         /* active dot color */
+  transform: scale(1.2);       /* slightly bigger when active */
 }
 
 .main-banner .active:before {
   color: #ff685f;
-  border-bottom: 3px solid #ff685f;
-} */
 
-
-
+}
+.padd-top{
+  padding-top: 90px !important;
+}
+*/
 /* 
 ---------------------------------------------
 About Style
@@ -1227,7 +1238,7 @@ About Style
 }
 
 .second-skill-item .progress .progress-bar {
-  border-color: #726ae3;
+  border-color: #03a4ed;
 }
 
 .third-skill-item .progress .progress-bar {
@@ -1273,13 +1284,15 @@ About Style
 
 .progress .progress-value div {
   margin-top: 10px;
+    padding: 10px;
 }
 
 .progress .progress-value span {
-  font-size: 18px;
-  text-transform: none;
-  color: #afafaf;
-  font-weight: 300;
+     font-size: 16px;
+    text-transform: none;
+    color: #333;
+    font-weight: 300;
+    line-height: 10px;
 }
 
 /* This for loop creates the  necessary css animation names 
@@ -1397,7 +1410,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
   100% {
     -webkit-transform: rotate(108);
-    transform: rotate(108deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -1409,7 +1422,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
   100% {
     -webkit-transform: rotate(144);
-    transform: rotate(144deg);
+    transform: rotate(160deg);
   }
 }
 
@@ -1436,7 +1449,7 @@ Services Style
 */
 
 .services {
-  padding-top: 130px;
+  padding-top: 110px;
   position: relative;
 }
 
@@ -2148,7 +2161,7 @@ footer p {
   text-align: center;
   margin: 20px 0px;
   color: #fff;
-    font-weight: 500;
+  font-weight: 500;
 
 }
 
@@ -2193,7 +2206,7 @@ responsive
 
   .main-banner {
     text-align: center;
-    padding: 226px 0px 30px 0px;
+    padding: 180px 0px 30px 0px;
   }
 
   .main-banner:before {
