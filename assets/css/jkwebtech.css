@@ -1175,7 +1175,7 @@ About Style
 }
 
 .about-left-image img {
-  margin-right: 45px;
+  padding-right: 45px;
 }
 
 .about-right-content p {
@@ -1292,12 +1292,12 @@ About Style
 }
 
 .progress .progress-value div {
-  margin-top: 10px;
+  margin: 10px;
     padding: 10px;
 }
 
 .progress .progress-value span {
-     font-size: 16px;
+     font-size: 15px;
     text-transform: none;
     color: #333;
     font-weight: 300;
@@ -2241,7 +2241,7 @@ responsive
   }
 
   .about-left-image img {
-    margin-right: 0px;
+    padding-right: 0px;
     margin-bottom: 45px;
     ;
   }
