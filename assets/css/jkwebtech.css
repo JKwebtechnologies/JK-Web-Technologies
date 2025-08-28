@@ -1106,12 +1106,13 @@ Banner Style
       display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: center;
 }
 @media (max-width: 425px) {
   .main-banner .item .down-buttons {
     flex-wrap: wrap;
       gap: 22px !important;
+          justify-content: center;
+
   }
 }
 
@@ -1282,7 +1283,7 @@ About Style
   display: flex;
   width: 100%;
   border-radius: 50%;
-  font-size: 35px;
+  font-size: 28px;
   text-align: center;
   line-height: 25px;
   align-items: center;
@@ -1460,6 +1461,7 @@ Services Style
 .services {
   padding-top: 110px;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .services:after {
@@ -1488,7 +1490,7 @@ Services Style
 
 .services .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .services .section-heading .line-dec {
@@ -1521,15 +1523,15 @@ Services Style
 
 .services .naccs .menu {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .services .naccs .menu div {
   color: #2a2a2a;
   margin: 0px;
-  width: 15%;
-  font-size: 20px;
-  font-weight: 700;
+  width: 19%;
+  font-size: 18px;
+  font-weight: 600;
   display: inline-block;
   text-align: center;
   cursor: pointer;
@@ -1621,13 +1623,19 @@ Services Style
   margin-bottom: 30px;
 }
 
-.nacc .ticks-list span {
-  display: inline-block;
-  opacity: 1;
-  margin-right: 45px;
-  margin-bottom: 20px;
-  font-size: 15px;
-  font-weight: 400;
+.nacc .ticks-list {
+      flex-wrap: wrap;
+    display: flex;
+}
+.nacc .ticks-list div {
+ display: flex;
+    opacity: 1;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    gap: 6px;
+    align-items: center;
 }
 
 
@@ -1713,7 +1721,7 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 130px;
+  padding-top: 20px;
   overflow: hidden;
   position: relative;
 }
@@ -1995,6 +2003,18 @@ contact
 
 .contact-us {
   padding-top: 130px;
+  position: relative;
+}
+.contact-us:before {
+    content: '';
+    background-image: url(../images/blog-left-dec.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 961px;
+    height: 1020px;
+    z-index: 0;
 }
 
 .contact-us .section-heading .line-dec {
