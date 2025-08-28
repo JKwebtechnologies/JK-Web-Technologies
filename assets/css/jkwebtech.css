@@ -739,7 +739,7 @@ header
   }
 
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    width: 250px;
   }
 
   .header-area.header-sticky .nav li a:hover,
