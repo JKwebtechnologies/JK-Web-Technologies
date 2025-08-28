@@ -979,14 +979,15 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 170px 0px 80px 0px;
   position: relative;
   overflow: hidden;
+  background-color: hsl(352, 71%, 35%, 5%);
 }
 
-.main-banner:after {
+/* .main-banner:after {
   content: '';
-  background-image: url(../images/slider-left-dec.jpg);
+  background-image: url(../images/baner-dec-left.png);
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -994,19 +995,21 @@ Banner Style
   width: 262px;
   height: 625px;
   z-index: 1;
-}
+  opacity: .5;
+} */
 
-.main-banner:before {
+/* .main-banner:before {
   content: '';
   background-image: url(../images/slider-right-dec.jpg);
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
   top: 60px;
-  width: 1159px;
-  height: 797px;
+  width: 1000px;
+  height: 720px;
   z-index: -1;
-}
+  opacity: .7;
+} */
 
 .main-banner .left-content {
   margin-right: 15px;
@@ -1042,8 +1045,83 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  max-width: 593px;
+  max-width: 700px;
 }
+.main-banner .item h6 {
+  text-transform: uppercase;
+  font-size: 18px;  
+  color: #971a2b;
+  margin-bottom: 15px;
+}
+
+.main-banner .item h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2a2a2a;
+  line-height: 72px;
+}
+
+.main-banner .item h2 em {
+  color: #971a2b;
+  font-style: normal;
+}
+
+.main-banner .item h2 span {
+  color: #f26f23;
+}
+
+.main-banner .item p {
+  margin: 20px 0px;
+}
+
+.main-banner .item .down-buttons {
+  display: inline-flex;
+}
+
+.main-banner .item .down-buttons .call-button i {
+  margin-right: 5px;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  background: rgb(255,104,95);
+  background: linear-gradient(105deg, #f37025 0%, #f37025 100%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-banner .item .down-buttons .call-button a {
+  color: #ff695f;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.main-banner .owl-dots {
+  margin-top: 60px;
+  counter-reset: dots;
+}
+
+.main-banner .owl-dot:before {
+  counter-increment:dots;
+  content: counter(dots);
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  color: #2a2a2a;
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: all .5s;
+}
+
+.main-banner .active:before {
+  color: #ff685f;
+  border-bottom: 3px solid #ff685f;
+} */
 
 
 
@@ -1053,8 +1131,8 @@ About Style
 --------------------------------------------- 
 */
 
-#about {
-  padding-top: 130px;
+.about1 {
+  padding-top: 80px;
 }
 
 .about-left-image img {
@@ -2270,4 +2348,75 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+
+
+.main-blue-button a {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+}
+
+.main-blue-button-hover a {
+  display: inline-block;
+  background-color: #03a4ed;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
+.main-blue-button-hover a:hover {
+  background-color: #ff695f;
+}
+
+.main-red-button a {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+}
+
+.main-red-button-hover a {
+  display: inline-block;
+  background-color: #ff695f;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+
+.main-red-button-hover a:hover {
+  background-color: #03a4ed;
+}
+
+.main-white-button a {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ff695f;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
 }
