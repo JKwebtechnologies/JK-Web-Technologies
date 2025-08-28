@@ -35,7 +35,28 @@
         }
       }
   });
-	
+		$('.owl-banner').owlCarousel({
+		items:1,
+		loop:true,
+		dots: true,
+		nav: false,
+		autoplay: true,
+		margin:0,
+		  responsive:{
+			  0:{
+				  items:1
+			  },
+			  600:{
+				  items:1
+			  },
+			  1000:{
+				  items:1
+			  },
+			  1600:{
+				  items:1
+			  }
+		  }
+	})
 
 	// Menu Dropdown Toggle
   if($('.menu-trigger').length){
