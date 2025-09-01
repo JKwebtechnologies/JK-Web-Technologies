@@ -312,6 +312,10 @@ header
 }
 
 @media (max-width: 576px) {
+  .width220 {
+    width: 200px !important;
+  }
+
   .pre-header ul.info {
     text-align: center !important;
   }
@@ -333,6 +337,19 @@ header
   .main-banner .item h2 {
     font-size: 40px !important;
     line-height: 60px !important;
+  }
+
+  .services .naccs .menu div .thumb {
+    padding: 14px 12px !important;
+  }
+
+  .services .icon img {
+    min-width: 40px !important;
+    max-width: 40px !important;
+  }
+
+  .nacc .ticks-list div {
+    width: 100% !important;
   }
 }
 
@@ -758,6 +775,10 @@ header
 }
 
 @media (max-width: 767px) {
+  .width220 {
+    width: 250px;
+  }
+
   .pre-header ul.info li:last-child {
     display: none;
   }
@@ -1123,7 +1144,7 @@ Banner Style
 
   }
 
-  .flex_direction{
+  .flex_direction {
     flex-direction: column-reverse !important;
   }
 }
@@ -1484,6 +1505,11 @@ Services Style
   padding-bottom: 100px;
 }
 
+.count {
+  position: relative;
+  margin-top: 100px;
+}
+
 .services:after {
   content: '';
   background-image: url(../images/services-left-dec.jpg);
@@ -1494,6 +1520,7 @@ Services Style
   width: 786px;
   height: 1217px;
   z-index: 0;
+  opacity: .5;
 }
 
 .services:before {
@@ -1506,6 +1533,8 @@ Services Style
   width: 161px;
   height: 413px;
   z-index: 0;
+  opacity: .5;
+
 }
 
 .services .section-heading {
@@ -1606,7 +1635,7 @@ Services Style
 }
 
 .services ul.nacc li .right-image img {
-  max-width: 420px;
+  max-width: 700px;
   float: right;
 }
 
@@ -1677,6 +1706,7 @@ Free Quote
   position: relative;
   z-index: 2;
   margin-top: 130px;
+
 }
 
 .free-quote .section-heading {
@@ -1742,7 +1772,7 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 120px;
+  padding-top: 30px;
   overflow: hidden;
   position: relative;
 }
@@ -1757,6 +1787,8 @@ Portfolio
   width: 414px;
   height: 861px;
   z-index: 1;
+  opacity: .5;
+
 }
 
 .our-portfolio:after {
@@ -1769,6 +1801,8 @@ Portfolio
   width: 677px;
   height: 759px;
   z-index: 1;
+  opacity: .5;
+
 }
 
 .our-portfolio .section-heading {
@@ -1861,161 +1895,6 @@ Portfolio
   background-color: #971a2b;
 }
 
-
-/* 
----------------------------------------------
-Blog
---------------------------------------------- 
-*/
-
-.blog:before {
-  content: '';
-  background-image: url(../images/blog-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 961px;
-  height: 1020px;
-  z-index: 0;
-}
-
-.blog {
-  position: relative;
-  padding-top: 130px;
-}
-
-.blog .section-heading {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.blog .section-heading .line-dec {
-  margin: 0 auto;
-}
-
-.blog-post {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-}
-
-.show-up {
-  position: relative;
-  z-index: 200;
-}
-
-.blog-post .thumb img {
-  border-top-right-radius: 23px;
-  border-top-left-radius: 23px;
-}
-
-.blog-post .down-content {
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  background-color: #fff;
-  padding: 30px;
-}
-
-.blog-post .down-content span.category {
-  font-size: 15px;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #971a2b;
-  border-radius: 18px;
-  display: inline-block;
-}
-
-.blog-post .down-content span.date {
-  font-size: 15px;
-  color: #afafaf;
-  text-align: right;
-  float: right;
-  margin-top: 4px;
-}
-
-.blog-post .down-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
-
-.blog-post .down-content p {
-  margin-bottom: 30px;
-}
-
-.blog-post .down-content span.author {
-  font-size: 15px;
-  color: #2a2a2a;
-}
-
-.blog-post .down-content span.author img {
-  max-width: 56px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.blog-post .down-content .border-first-button {
-  display: inline-block;
-  float: right;
-}
-
-.blog-posts {
-  margin-left: 30px;
-}
-
-.post-item {
-  margin-bottom: 62px;
-}
-
-.last-post-item {
-  margin-bottom: 0px;
-}
-
-.post-item .thumb {
-  display: inline-block;
-  float: left;
-  margin-right: 30px;
-}
-
-.post-item .thumb img {
-  border-radius: 23px;
-  display: inline-block;
-}
-
-.post-item .right-content {
-  padding-top: 20px;
-}
-
-.post-item .right-content span.category {
-  font-size: 15px;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #971a2b;
-  border-radius: 18px;
-  display: inline-block;
-}
-
-.post-item .right-content span.date {
-  font-size: 15px;
-  color: #afafaf;
-  text-align: right;
-  float: right;
-  margin-top: 4px;
-}
-
-.post-item .right-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
-
-
 /* 
 ---------------------------------------------
 contact
@@ -2037,6 +1916,7 @@ contact
   width: 961px;
   height: 1020px;
   z-index: 0;
+
 }
 
 .contact-us .section-heading .line-dec {
@@ -2201,7 +2081,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg.jpg);
+  background-image: url(../images/footer-bg-v2.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2360,7 +2240,7 @@ responsive
   }
 
   .services .naccs .menu div .thumb {
-    padding: 5px;
+    padding: 14px;
   }
 
   .services .icon img {
@@ -2558,4 +2438,8 @@ responsive
     transform: rotate(45deg);
     margin: auto;
   }
+}
+
+.width220 {
+  width: 300px;
 }
