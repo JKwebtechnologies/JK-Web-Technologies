@@ -312,6 +312,10 @@ header
 }
 
 @media (max-width: 576px) {
+  .width220 {
+    width: 200px !important;
+  }
+
   .pre-header ul.info {
     text-align: center !important;
   }
@@ -329,9 +333,23 @@ header
     text-align: center !important;
     margin-top: 10px !important;
   }
+
   .main-banner .item h2 {
     font-size: 40px !important;
     line-height: 60px !important;
+  }
+
+  .services .naccs .menu div .thumb {
+    padding: 14px 12px !important;
+  }
+
+  .services .icon img {
+    min-width: 40px !important;
+    max-width: 40px !important;
+  }
+
+  .nacc .ticks-list div {
+    width: 100% !important;
   }
 }
 
@@ -757,6 +775,10 @@ header
 }
 
 @media (max-width: 767px) {
+  .width220 {
+    width: 250px;
+  }
+
   .pre-header ul.info li:last-child {
     display: none;
   }
@@ -1103,18 +1125,30 @@ Banner Style
 }
 
 .main-banner .item .down-buttons {
-      display: flex;
-    gap: 30px;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
+
 @media (max-width: 425px) {
   .main-banner .item .down-buttons {
     flex-wrap: wrap;
-      gap: 22px !important;
-          justify-content: center;
+    gap: 22px !important;
 
   }
 }
+
+@media (max-width: 991px) {
+  .main-banner .item .down-buttons {
+    justify-content: center !important;
+
+  }
+
+  .flex_direction {
+    flex-direction: column-reverse !important;
+  }
+}
+
 
 .main-banner .item .down-buttons .call-button i {
   margin-right: 5px;
@@ -1148,22 +1182,29 @@ Banner Style
   width: 12px;
   height: 12px;
   margin-left: 10px;
-  border-radius: 50%;          /* makes it a circle */
-  background: #2a2a2a;         /* dot color */
+  border-radius: 50%;
+  /* makes it a circle */
+  background: #2a2a2a;
+  /* dot color */
   transition: all .3s ease;
 }
+
 .main-banner .owl-dot.active:before {
-  background: #971a2b;         /* active dot color */
-  transform: scale(1.2);       /* slightly bigger when active */
+  background: #971a2b;
+  /* active dot color */
+  transform: scale(1.2);
+  /* slightly bigger when active */
 }
 
 .main-banner .active:before {
   color: #ff685f;
 
 }
-.padd-top{
+
+.padd-top {
   padding-top: 90px !important;
 }
+
 */
 /* 
 ---------------------------------------------
@@ -1294,15 +1335,15 @@ About Style
 
 .progress .progress-value div {
   margin: 10px;
-    padding: 10px;
+  padding: 10px;
 }
 
 .progress .progress-value span {
-     font-size: 15px;
-    text-transform: none;
-    color: #333;
-    font-weight: 300;
-    line-height: 10px;
+  font-size: 15px;
+  text-transform: none;
+  color: #333;
+  font-weight: 300;
+  line-height: 10px;
 }
 
 /* This for loop creates the  necessary css animation names 
@@ -1461,7 +1502,12 @@ Services Style
 .services {
   padding-top: 110px;
   position: relative;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
+}
+
+.count {
+  position: relative;
+  margin-top: 100px;
 }
 
 .services:after {
@@ -1474,6 +1520,7 @@ Services Style
   width: 786px;
   height: 1217px;
   z-index: 0;
+  opacity: .5;
 }
 
 .services:before {
@@ -1486,6 +1533,8 @@ Services Style
   width: 161px;
   height: 413px;
   z-index: 0;
+  opacity: .5;
+
 }
 
 .services .section-heading {
@@ -1586,7 +1635,7 @@ Services Style
 }
 
 .services ul.nacc li .right-image img {
-  max-width: 420px;
+  max-width: 700px;
   float: right;
 }
 
@@ -1624,18 +1673,19 @@ Services Style
 }
 
 .nacc .ticks-list {
-      flex-wrap: wrap;
-    display: flex;
+  flex-wrap: wrap;
+  display: flex;
 }
+
 .nacc .ticks-list div {
- display: flex;
-    opacity: 1;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: 400;
-    width: 50%;
-    gap: 6px;
-    align-items: center;
+  display: flex;
+  opacity: 1;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 50%;
+  gap: 6px;
+  align-items: center;
 }
 
 
@@ -1656,6 +1706,7 @@ Free Quote
   position: relative;
   z-index: 2;
   margin-top: 130px;
+
 }
 
 .free-quote .section-heading {
@@ -1721,7 +1772,7 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 20px;
+  padding-top: 30px;
   overflow: hidden;
   position: relative;
 }
@@ -1736,6 +1787,8 @@ Portfolio
   width: 414px;
   height: 861px;
   z-index: 1;
+  opacity: .5;
+
 }
 
 .our-portfolio:after {
@@ -1748,6 +1801,8 @@ Portfolio
   width: 677px;
   height: 759px;
   z-index: 1;
+  opacity: .5;
+
 }
 
 .our-portfolio .section-heading {
@@ -1840,161 +1895,6 @@ Portfolio
   background-color: #971a2b;
 }
 
-
-/* 
----------------------------------------------
-Blog
---------------------------------------------- 
-*/
-
-.blog:before {
-  content: '';
-  background-image: url(../images/blog-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 961px;
-  height: 1020px;
-  z-index: 0;
-}
-
-.blog {
-  position: relative;
-  padding-top: 130px;
-}
-
-.blog .section-heading {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.blog .section-heading .line-dec {
-  margin: 0 auto;
-}
-
-.blog-post {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-}
-
-.show-up {
-  position: relative;
-  z-index: 200;
-}
-
-.blog-post .thumb img {
-  border-top-right-radius: 23px;
-  border-top-left-radius: 23px;
-}
-
-.blog-post .down-content {
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  background-color: #fff;
-  padding: 30px;
-}
-
-.blog-post .down-content span.category {
-  font-size: 15px;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #971a2b;
-  border-radius: 18px;
-  display: inline-block;
-}
-
-.blog-post .down-content span.date {
-  font-size: 15px;
-  color: #afafaf;
-  text-align: right;
-  float: right;
-  margin-top: 4px;
-}
-
-.blog-post .down-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
-
-.blog-post .down-content p {
-  margin-bottom: 30px;
-}
-
-.blog-post .down-content span.author {
-  font-size: 15px;
-  color: #2a2a2a;
-}
-
-.blog-post .down-content span.author img {
-  max-width: 56px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.blog-post .down-content .border-first-button {
-  display: inline-block;
-  float: right;
-}
-
-.blog-posts {
-  margin-left: 30px;
-}
-
-.post-item {
-  margin-bottom: 62px;
-}
-
-.last-post-item {
-  margin-bottom: 0px;
-}
-
-.post-item .thumb {
-  display: inline-block;
-  float: left;
-  margin-right: 30px;
-}
-
-.post-item .thumb img {
-  border-radius: 23px;
-  display: inline-block;
-}
-
-.post-item .right-content {
-  padding-top: 20px;
-}
-
-.post-item .right-content span.category {
-  font-size: 15px;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #971a2b;
-  border-radius: 18px;
-  display: inline-block;
-}
-
-.post-item .right-content span.date {
-  font-size: 15px;
-  color: #afafaf;
-  text-align: right;
-  float: right;
-  margin-top: 4px;
-}
-
-.post-item .right-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
-
-
 /* 
 ---------------------------------------------
 contact
@@ -2005,16 +1905,18 @@ contact
   padding-top: 130px;
   position: relative;
 }
+
 .contact-us:before {
-    content: '';
-    background-image: url(../images/blog-left-dec.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 961px;
-    height: 1020px;
-    z-index: 0;
+  content: '';
+  background-image: url(../images/blog-left-dec.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 961px;
+  height: 1020px;
+  z-index: 0;
+
 }
 
 .contact-us .section-heading .line-dec {
@@ -2179,7 +2081,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg.jpg);
+  background-image: url(../images/footer-bg-v2.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2338,7 +2240,7 @@ responsive
   }
 
   .services .naccs .menu div .thumb {
-    padding: 5px;
+    padding: 14px;
   }
 
   .services .icon img {
@@ -2480,4 +2382,64 @@ responsive
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
+}
+
+
+.stats-strip {
+  background: #991a2b0d;
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.stat-card {
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+}
+
+.stat-value {
+  font-weight: 800;
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: .5px;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.stat-suffix {
+  color: #971a2b;
+}
+
+.stat-label {
+  margin-top: 8px;
+  color: #6c757d;
+  font-weight: 600;
+  font-size: .98rem;
+}
+
+/* tiny diamond separators (optional) */
+.separator {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .separator {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #ffd66e;
+    transform: rotate(45deg);
+    margin: auto;
+  }
+}
+
+.width220 {
+  width: 300px;
 }
