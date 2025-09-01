@@ -329,6 +329,7 @@ header
     text-align: center !important;
     margin-top: 10px !important;
   }
+
   .main-banner .item h2 {
     font-size: 40px !important;
     line-height: 60px !important;
@@ -1103,18 +1104,30 @@ Banner Style
 }
 
 .main-banner .item .down-buttons {
-      display: flex;
-    gap: 30px;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
+
 @media (max-width: 425px) {
   .main-banner .item .down-buttons {
     flex-wrap: wrap;
-      gap: 22px !important;
-          justify-content: center;
+    gap: 22px !important;
 
   }
 }
+
+@media (max-width: 991px) {
+  .main-banner .item .down-buttons {
+    justify-content: center !important;
+
+  }
+
+  .flex_direction{
+    flex-direction: column-reverse !important;
+  }
+}
+
 
 .main-banner .item .down-buttons .call-button i {
   margin-right: 5px;
@@ -1148,22 +1161,29 @@ Banner Style
   width: 12px;
   height: 12px;
   margin-left: 10px;
-  border-radius: 50%;          /* makes it a circle */
-  background: #2a2a2a;         /* dot color */
+  border-radius: 50%;
+  /* makes it a circle */
+  background: #2a2a2a;
+  /* dot color */
   transition: all .3s ease;
 }
+
 .main-banner .owl-dot.active:before {
-  background: #971a2b;         /* active dot color */
-  transform: scale(1.2);       /* slightly bigger when active */
+  background: #971a2b;
+  /* active dot color */
+  transform: scale(1.2);
+  /* slightly bigger when active */
 }
 
 .main-banner .active:before {
   color: #ff685f;
 
 }
-.padd-top{
+
+.padd-top {
   padding-top: 90px !important;
 }
+
 */
 /* 
 ---------------------------------------------
@@ -1294,15 +1314,15 @@ About Style
 
 .progress .progress-value div {
   margin: 10px;
-    padding: 10px;
+  padding: 10px;
 }
 
 .progress .progress-value span {
-     font-size: 15px;
-    text-transform: none;
-    color: #333;
-    font-weight: 300;
-    line-height: 10px;
+  font-size: 15px;
+  text-transform: none;
+  color: #333;
+  font-weight: 300;
+  line-height: 10px;
 }
 
 /* This for loop creates the  necessary css animation names 
@@ -1624,18 +1644,19 @@ Services Style
 }
 
 .nacc .ticks-list {
-      flex-wrap: wrap;
-    display: flex;
+  flex-wrap: wrap;
+  display: flex;
 }
+
 .nacc .ticks-list div {
- display: flex;
-    opacity: 1;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: 400;
-    width: 50%;
-    gap: 6px;
-    align-items: center;
+  display: flex;
+  opacity: 1;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 50%;
+  gap: 6px;
+  align-items: center;
 }
 
 
@@ -1721,7 +1742,7 @@ Portfolio
 */
 
 .our-portfolio {
-  padding-top: 20px;
+  padding-top: 120px;
   overflow: hidden;
   position: relative;
 }
@@ -2005,16 +2026,17 @@ contact
   padding-top: 130px;
   position: relative;
 }
+
 .contact-us:before {
-    content: '';
-    background-image: url(../images/blog-left-dec.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 961px;
-    height: 1020px;
-    z-index: 0;
+  content: '';
+  background-image: url(../images/blog-left-dec.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 961px;
+  height: 1020px;
+  z-index: 0;
 }
 
 .contact-us .section-heading .line-dec {
@@ -2480,4 +2502,60 @@ responsive
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
+}
+
+
+.stats-strip {
+  background: #991a2b0d;
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.stat-card {
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+}
+
+.stat-value {
+  font-weight: 800;
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: .5px;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.stat-suffix {
+  color: #971a2b;
+}
+
+.stat-label {
+  margin-top: 8px;
+  color: #6c757d;
+  font-weight: 600;
+  font-size: .98rem;
+}
+
+/* tiny diamond separators (optional) */
+.separator {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .separator {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #ffd66e;
+    transform: rotate(45deg);
+    margin: auto;
+  }
 }
