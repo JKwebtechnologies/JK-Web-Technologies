@@ -1502,7 +1502,7 @@ Services Style
 .services {
   padding-top: 110px;
   position: relative;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 .count {
