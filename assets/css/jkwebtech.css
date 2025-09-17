@@ -2718,4 +2718,8 @@ responsive
   .testimonial_section .testimonial_box .testimonial_container .testimonials .images_box {
     display: none;
   }
+  .testimonial_section .testimonial_box .testimonial_container .testimonials .testimonial_content{
+  margin-top: 0px !important;
+
+  }
 }
