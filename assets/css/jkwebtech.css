@@ -2590,7 +2590,7 @@ responsive
   margin-left: 150px;
   margin-top: 69px;
   padding: 45px 40px 45px 40px;
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
   background-color: #fff;
   transition: all 0.5s ease-in-out 0s;
@@ -2643,7 +2643,8 @@ responsive
 .testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .images_box .testimonial_img img {
   border: 5px solid #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-  width: 35%;
+  width: 23%;
+    margin-left: 55px;
 }
 .testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-prev {
   position: absolute;

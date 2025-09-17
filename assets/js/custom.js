@@ -63,7 +63,7 @@
     margin:10,
     dots:false,
     nav:true,
-    autoplay:true,   
+    autoplay: false,   
     smartSpeed: 3000, 
     autoplayTimeout:4000,
     responsive:{
